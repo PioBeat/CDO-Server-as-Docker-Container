@@ -77,8 +77,6 @@ A *volume* is created for the folders `./aux/database` and `./aux/configuration`
 You can also use the standard `docker-compose` commands to build and run the image:
 
 ```bash
-# Run the container (= starts the CDO server)
-$ docker-compose up
 # Build the image and run the container
 $ docker-compose up --build
 ```
