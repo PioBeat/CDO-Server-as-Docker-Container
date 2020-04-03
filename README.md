@@ -31,7 +31,7 @@ Use the following scripts in this order to setup the CDO server and build the Do
 ```bash
 $ configure.sh
 $ build.sh
-# it may be possible to run 'chmod +x' first 
+# it may be necessary to run 'chmod +x' first 
 ```
 
 The `build.sh` script is essentially doing the following:
