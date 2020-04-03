@@ -1,3 +1,5 @@
+<img align="left" src="cdo-for-docker-logo.png" alt="cdo-for-docker-logo" style="zoom:50%;" />
+
 # CDO Server as Docker Container (CDOSaaDC)
 
 This repository contains [Eclipse CDO](https://www.eclipse.org/cdo/) and all necessary configuration files to build and run the server in a Docker container.
