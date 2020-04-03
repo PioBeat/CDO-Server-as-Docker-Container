@@ -26,12 +26,14 @@ $ sudo curl -L "https://github.com/docker/compose/releases/download/1.25.4/docke
 
 ## Build Configuration
 
+First, clone this repository and make sure that you have enough space on your filesystem. Then change into the repository folder.
+
 Use the following scripts in this order to setup the CDO server and build the Docker image:
 
 ```bash
+# It may be necessary to run 'chmod +x' first on these scripts
 $ configure.sh
 $ build.sh
-# it may be necessary to run 'chmod +x' first 
 ```
 
 The `build.sh` script is essentially doing the following:
