@@ -1,11 +1,12 @@
 #!/bin/bash
-filename=eclipse-bare-cdo.tar.gz
+
+filename=eclipse-cdo-server-oxygen-x64.tar.gz
+url=https://github.com/PioBeat/CDO-Server-as-Docker-Container/releases/download/v1.0.0/${filename}
 
 echo "Starting the configuration process now ..."
-# TODO: we have to use our own "eclipse-stub" and cannot download a version
-# it is only possible to install it via the eclipse installer
-# echo "[1] Downloading Eclipse first ..."
-# wget https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/oxygen/R/eclipse-modeling-oxygen-R-linux-gtk-x86_64.tar.gz
+
+echo "[1] Downloading Eclipse CDO Server from ${url} ..."
+wget ${url} -P ./
 
 echo "[2] Extracting the archive '${filename}' now ..."
 tar -xzf ./${filename} -C cdo-server-oxygen-docker/ --strip-components=1 eclipse/plugins/
