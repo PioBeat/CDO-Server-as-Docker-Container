@@ -1,7 +1,4 @@
-<p>
-<img align="left" src="cdo-for-docker-logo.png" alt="cdo-for-docker-logo" style="zoom:50%;" /> 
-</p>
-
+![](./cdo-for-docker-logo.png)
 
 # CDO Server as Docker Container (CDOSaaDC)
 
