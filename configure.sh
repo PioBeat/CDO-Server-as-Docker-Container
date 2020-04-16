@@ -17,7 +17,7 @@ tar -xzf ./${filename} -C cdo-server-oxygen-docker/ --strip-components=1 eclipse
 echo "[3] Finished extraction of archive '${filename}'."
 
 echo "[4] Copying the configuration now ..."
-\cp -rf ./aux/* ./cdo-server-oxygen-docker/
+\cp -rf ./etc/* ./cdo-server-oxygen-docker/
 echo "[5] Finished copying the configuration."
 
 echo "[6] Configuration process completed."

@@ -70,7 +70,7 @@ cdo-server_1  | [INFO] CDO server started
 ...
 ```
 
-
+(To shutdown the server, just enter <kbd>CTRL+C</kbd> and wait until the server is gracefully stops)
 
 The CDO server is now available under `localhost:2036`. 
 

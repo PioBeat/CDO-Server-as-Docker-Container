@@ -10,6 +10,6 @@ services:
     ports:
         - "2036:2036"
     volumes:
-        - ./aux/database/:/root/eclipse/cdo-server-oxygen-docker/database/
-        - ./aux/configuration/:/root/eclipse/cdo-server-oxygen-docker/configuration/
+        - ./etc/database/:/root/eclipse/cdo-server-oxygen-docker/database/
+        - ./etc/configuration/:/root/eclipse/cdo-server-oxygen-docker/configuration/
     privileged: true
