@@ -4,7 +4,7 @@
 
 This repository contains [Eclipse CDO](https://www.eclipse.org/cdo/) and all necessary configuration files to build and run the server in a Docker container.
 
-> **A note concerning the version of this CDO Model Repository:** Oxygen is the target of this build, Eclipse 4.7 + EMF 2.13
+> **A note concerning the version of this CDO Model Repository:** Oxygen is the target of this build, Eclipse 4.16 + EMF 2.22
 
 ## Requirements
 
