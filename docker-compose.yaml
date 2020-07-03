@@ -1,0 +1,15 @@
+version: "3.7"
+services:
+  cdo-server:
+    stdin_open: true
+    tty: true
+    # environment:
+    build: 
+        context: ./
+        dockerfile: Dockerfile
+    ports:
+        - "2036:2036"
+    volumes:
+        - ./etc/database/:/root/eclipse/cdo-server-oxygen-docker/database/
+        - ./etc/configuration/:/root/eclipse/cdo-server-oxygen-docker/configuration/
+    privileged: true

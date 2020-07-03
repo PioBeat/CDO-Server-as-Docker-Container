@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config date="1593775448289" transient="false" version="3.0">
+<site enabled="true" policy="MANAGED-ONLY" updateable="true" url="file:">
+<feature id="org.eclipse.emf.cdo.server.embedded" url="features/org.eclipse.emf.cdo.server.embedded_4.10.0.v20200610-0352/" version="4.10.0.v20200610-0352">
+</feature>
+<feature id="org.eclipse.net4j.db.h2" url="features/org.eclipse.net4j.db.h2_4.4.0.v20200412-0425/" version="4.4.0.v20200412-0425">
+</feature>
+<feature id="org.eclipse.emf.cdo.server.mongodb.source" url="features/org.eclipse.emf.cdo.server.mongodb.source_5.1.1.v20200528-0542/" version="5.1.1.v20200528-0542">
+</feature>
+<feature id="org.eclipse.emf.cdo.migrator.source" url="features/org.eclipse.emf.cdo.migrator.source_4.3.1.v20200330-1311/" version="4.3.1.v20200330-1311">
+</feature>
+<feature id="org.eclipse.emf.cdo.dawn" url="features/org.eclipse.emf.cdo.dawn_2.2.1.v20200330-1311/" version="2.2.1.v20200330-1311">
+</feature>
+<feature id="org.eclipse.emf.cdo.sdk.source" url="features/org.eclipse.emf.cdo.sdk.source_5.3.0.v20200610-0352/" version="5.3.0.v20200610-0352">
+</feature>
+<feature id="org.eclipse.emf.cdo.source" url="features/org.eclipse.emf.cdo.source_4.10.0.v20200610-0352/" version="4.10.0.v20200610-0352">
+</feature>
+<feature id="org.eclipse.emf.cdo.migrator" url="features/org.eclipse.emf.cdo.migrator_4.3.1.v20200330-1311/" version="4.3.1.v20200330-1311">
+</feature>
+<feature id="org.eclipse.emf.cdo.server.source" url="features/org.eclipse.emf.cdo.server.source_4.10.0.v20200610-0352/" version="4.10.0.v20200610-0352">
+</feature>
+<feature id="org.eclipse.emf.cdo.server.embedded.source" url="features/org.eclipse.emf.cdo.server.embedded.source_4.10.0.v20200610-0352/" version="4.10.0.v20200610-0352">
+</feature>
+<feature id="org.eclipse.emf.cdo.server.db.source" url="features/org.eclipse.emf.cdo.server.db.source_4.9.0.v20200610-0352/" version="4.9.0.v20200610-0352">
+</feature>
+<feature id="org.eclipse.emf.cdo.server.lissome.source" url="features/org.eclipse.emf.cdo.server.lissome.source_4.3.0.v20200311-1912/" version="4.3.0.v20200311-1912">
+</feature>
+<feature id="org.eclipse.emf.cdo.compare.source" url="features/org.eclipse.emf.cdo.compare.source_4.5.0.v20200311-1912/" version="4.5.0.v20200311-1912">
+</feature>
+<feature id="org.eclipse.emf.cdo.server.lissome" url="features/org.eclipse.emf.cdo.server.lissome_4.3.0.v20200311-1912/" version="4.3.0.v20200311-1912">
+</feature>
+<feature id="org.eclipse.emf.cdo.server.mongodb" url="features/org.eclipse.emf.cdo.server.mongodb_5.1.1.v20200528-0542/" version="5.1.1.v20200528-0542">
+</feature>
+<feature id="org.eclipse.emf.cdo.sdk" url="features/org.eclipse.emf.cdo.sdk_5.3.0.v20200610-0352/" version="5.3.0.v20200610-0352">
+</feature>
+</site>
+</config>
