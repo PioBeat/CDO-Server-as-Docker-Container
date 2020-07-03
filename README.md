@@ -30,6 +30,8 @@ $ sudo curl -L "https://github.com/docker/compose/releases/download/1.25.4/docke
 
 First, clone this repository and make sure that you have enough space on your filesystem. Then change into the repository folder.
 
+Use `git clone --single-branch --branch <branchname> <remote-repo>` to checkout a specific branch which reflects a concrete CDO version, e.g., `<branchname> = cdo-4.10`
+
 Use the following scripts in this order to setup the CDO server and build the Docker image:
 
 ```bash
