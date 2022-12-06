@@ -1,0 +1,3 @@
+.directory 
+cdo-server-oxygen-docker/*
+!cdo-server-oxygen-docker/.gitkeep 
