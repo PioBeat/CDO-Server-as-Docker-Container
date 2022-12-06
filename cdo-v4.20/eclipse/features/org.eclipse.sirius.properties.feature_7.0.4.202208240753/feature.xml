@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.sirius.properties.feature"
+      label="%featureName"
+      version="7.0.4.202208240753"
+      provider-name="%providerName"
+      plugin="org.eclipse.sirius.properties">
+
+   <description url="http://www.eclipse.org/sirius">
+      Runtime support for Sirius-defined property views.
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="org.eclipse.sirius.interpreter"
+         download-size="31"
+         install-size="55"
+         version="7.0.4.202208240753"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.sirius.properties"
+         download-size="378"
+         install-size="1056"
+         version="7.0.4.202208240753"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.sirius.properties.edit"
+         download-size="406"
+         install-size="926"
+         version="7.0.4.202208240753"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.sirius.properties.core"
+         download-size="167"
+         install-size="450"
+         version="7.0.4.202208240753"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.sirius.ui.properties"
+         download-size="72"
+         install-size="163"
+         version="7.0.4.202208240753"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.sirius.properties.ext.widgets.reference"
+         download-size="42"
+         install-size="97"
+         version="7.0.4.202208240753"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.sirius.properties.ext.widgets.reference.edit"
+         download-size="47"
+         install-size="88"
+         version="7.0.4.202208240753"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.sirius.ui.properties.ext.widgets.reference"
+         download-size="20"
+         install-size="36"
+         version="7.0.4.202208240753"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.sirius.properties.defaultrules"
+         download-size="16"
+         install-size="30"
+         version="7.0.4.202208240753"
+         unpack="false"/>
+
+</feature>

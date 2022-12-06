@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ASCII"?>
+<base:Annotation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:base="http://www.eclipse.org/oomph/base/1.0" source="initial">
+  <details key="offline" value="false"/>
+  <details key="mirrors" value="true"/>
+</base:Annotation>

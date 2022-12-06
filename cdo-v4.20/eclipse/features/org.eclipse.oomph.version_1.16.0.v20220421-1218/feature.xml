@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2014-2017 Eike Stepper (Loehne, Germany) and others.
+  All rights reserved. This program and the accompanying materials
+  are made available under the terms of the Eclipse Public License v2.0
+  which accompanies this distribution, and is available at
+  http://www.eclipse.org/legal/epl-v20.html
+
+  Contributors:
+    Eike Stepper - initial API and implementation
+-->
+<feature
+      id="org.eclipse.oomph.version"
+      label="%featureName"
+      version="1.16.0.v20220421-1218"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright url="%copyrightURL">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <url>
+      <update label="%updateSiteName" url="https://download.eclipse.org/oomph/updates"/>
+      <discovery label="%updateSiteName" url="https://download.eclipse.org/oomph/updates"/>
+   </url>
+
+   <plugin
+         id="org.eclipse.oomph.version"
+         download-size="108"
+         install-size="236"
+         version="1.12.0.v20220421-1218"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.oomph.version.digest"
+         download-size="29"
+         install-size="66"
+         version="1.11.0.v20220421-1218"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.oomph.version.ui"
+         download-size="104"
+         install-size="239"
+         version="1.14.0.v20220421-1218"
+         unpack="false"/>
+
+</feature>

@@ -1,41 +1,32 @@
 ![](./cdo-for-docker-logo.png)
 
-# CDO Server as Docker Container (CDOSaaDC)
+# CDO Server as Docker Container (CDOaC)
 
 This repository contains [Eclipse CDO](https://www.eclipse.org/cdo/) and all necessary configuration files to build and run the server in a Docker container.
 
-> **A note concerning the version of this CDO Model Repository:** Oxygen is the target of this build, Eclipse 4.16 + EMF 2.22
-
 ## Requirements
 
-| Name           | Version    |
-| -------------- | ---------- |
-| Docker         | >= 19.03.8 |
-| Docker-Compose | >= 1.25.4  |
-
-
+| Name           | Version     |
+| -------------- | ----------- |
+| Docker         | >= 20.10.21 |
+| Docker Compose | >= 2.12.2   |
 
 ### Install Docker and Docker-Compose
 
 ```bash
 # Install docker: https://docs.docker.com/install/
-
-# Install docker-compose: https://docs.docker.com/compose/install/
-$ sudo curl -L "https://github.com/docker/compose/releases/download/1.25.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 ```
-
-
 
 ## Build Configuration
 
-First, clone this repository and make sure that you have enough space on your filesystem. Then change into the repository folder.
+First, clone this repository and make sure that you have enough space on your filesystem (~2GB). Then change into the repository folder:
 
-Use `git clone --single-branch --branch <branchname> <remote-repo>` to checkout a specific branch which reflects a concrete CDO version, e.g., `<branchname> = cdo-4.10`
+- Use `git clone --single-branch --branch <branchname> <remote-repo>` to checkout a specific branch which reflects a concrete CDO version, e.g., `<branchname> = cdo-4.10`, `<remote-repo> = this Git repository`.
 
 Use the following scripts in this order to setup the CDO server and build the Docker image:
 
 ```bash
-# It may be necessary to run 'chmod +x' first on these scripts
+# It may be necessary to run 'chmod +x' first on these scripts and with sudo
 $ configure.sh
 $ build.sh
 ```
@@ -44,14 +35,16 @@ The `build.sh` script is essentially doing the following:
 
 ```bash
 # Build the image
-$ docker-compose build
+$ docker compose build
 ```
 
 Then **start the container** by typing:
 
 ```bash
-$ docker-compose up
+$ start.sh
 ```
+
+which executes `docker compose up`.
 
 If everything runs fine the output should look like this:
 
@@ -74,20 +67,24 @@ cdo-server_1  | [INFO] CDO server started
 
 (To shutdown the server, just enter <kbd>CTRL+C</kbd> and wait until the server is gracefully stops)
 
-The CDO server is now available under `localhost:2036`. 
+- The CDO server is now available under `localhost:2036`. 
 
-The default name of the CDO repository is `repo1`.
+- The default name of the CDO repository is `repo1`.
 
-A *volume* is created for the folders `./aux/database` and `./aux/configuration` in order to persist the database changes when the user updates the database (otherwise the database is useless and looses all changes when the container is stopped).
+- A *volume* is created for the folders `./etc/database` in order to persist the database changes when the user updates the database (otherwise the database is useless and looses all changes when the container is stopped).
 
-You can also use the standard `docker-compose` commands to build and run the image:
+#### Helpful Docker Commands
+
+- Use the standard `docker-compose` commands to build and run the image:
 
 ```bash
-# Build the image and run the container
-$ docker-compose up --build
+$ docker compose up --build
 ```
 
-
+- `docker images -a`
+- `docker run -it --entrypoint /bin/bash IMAGE_ID`
+- `docker-compose down --remove-orphans`
+- `docker system prune -a`
 
 ## Repository Configuration
 

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<setup:Workspace
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
+    name="workspace">
+  <setupTask
+      xsi:type="setup:CompoundTask"
+      name="Eclipse Projects">
+    <restriction
+        xsi:type="setup:ProjectCatalog"
+        href="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']"/>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="CDO Model Repository">
+      <restriction
+          xsi:type="setup:Project"
+          href="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='cdo']"/>
+      <setupTask
+          xsi:type="setup:VariableTask"
+          type="FOLDER"
+          name="cdo.git.clone.location"
+          value="/home/dominik/cdo-master/git/cdo"
+          label="CDO Git clone location">
+        <description>The absolute folder location where the CDO Git clone is located</description>
+      </setupTask>
+    </setupTask>
+  </setupTask>
+  <stream href="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='cdo']/@streams[name='master']"/>
+</setup:Workspace>

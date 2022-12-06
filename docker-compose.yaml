@@ -1,6 +1,7 @@
-version: "3.7"
+version: "3.9"
 services:
   cdo-server:
+    container_name: cdo-4.20
     stdin_open: true
     tty: true
     # environment:
@@ -10,6 +11,6 @@ services:
     ports:
         - "2036:2036"
     volumes:
-        - ./etc/database/:/root/eclipse/cdo-server-oxygen-docker/database/
-        - ./etc/configuration/:/root/eclipse/cdo-server-oxygen-docker/configuration/
+        - ./etc/database/:/root/cdo-v4.20/eclipse/database/
+    #    - ./etc/configuration/:/root/cdo-v4.20/eclipse/configuration/
     privileged: true

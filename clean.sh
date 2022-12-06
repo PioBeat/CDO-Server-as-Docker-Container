@@ -1,4 +1,5 @@
 #!/bin/bash
 
-rm -r ./cdo-server-oxygen-docker/*
-rm -r ./eclipse-cdo-server-oxygen-x64.tar.gz
+rm -r ./cdo-v4.20/*
+rm -r ./cdo-v4.20.zip
+rm -r ./etc/
